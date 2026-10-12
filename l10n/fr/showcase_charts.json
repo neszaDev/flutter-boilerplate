@@ -1,0 +1,40 @@
+{
+  "ChartsPage": {
+    "title": "Graphiques",
+    "description": "Graphiques en courbes, en barres, en anneau, en radar, en secteurs et en aires polaires, plus les petits graphiques des widgets.",
+    "line_title": "Graphique en courbes",
+    "line_description": "Deux séries sur sept mois, remplies sous la courbe.",
+    "bar_title": "Graphique en barres",
+    "bar_description": "Commits par mois sur un an.",
+    "doughnut_title": "Graphique en anneau",
+    "doughnut_description": "Part de chaque framework, avec le centre évidé.",
+    "radar_title": "Graphique en radar",
+    "radar_description": "Heures par activité, une forme par année.",
+    "pie_title": "Graphique en secteurs",
+    "pie_description": "Les mêmes parts de frameworks en secteurs pleins.",
+    "polar_title": "Graphique en aires polaires",
+    "polar_description": "Une part égale par activité ; le rayon indique les heures.",
+    "simple_line_title": "Courbe simple",
+    "simple_line_description": "Une courbe sans axes, pour les espaces réduits.",
+    "simple_pointed_title": "Courbe simple à points",
+    "simple_pointed_description": "La même courbe avec un point sur chaque valeur.",
+    "simple_bar_title": "Barres simples",
+    "simple_bar_description": "Des barres sans axes, pour les espaces réduits.",
+    "sales": "Ventes"
+  },
+  "ChartExamples": {
+    "data_one": "Données un",
+    "data_two": "Données deux",
+    "commits": "Commits",
+    "eating": "Manger",
+    "drinking": "Boire",
+    "sleeping": "Dormir",
+    "designing": "Concevoir",
+    "coding": "Coder",
+    "cycling": "Vélo",
+    "running": "Course",
+    "polar_tooltip": "{year} : {hours} h",
+    "value_label": "{name} : {value}",
+    "touch_hint": "Touchez le graphique pour voir les valeurs."
+  }
+}

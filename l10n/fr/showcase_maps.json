@@ -1,0 +1,19 @@
+{
+  "GoogleMapsPage": {
+    "title": "Cartes",
+    "description": "Des lieux épinglés sur une carte OpenStreetMap dessinée avec flutter_map : aucune clé d’API nécessaire.",
+    "card_title": "Lieux",
+    "card_description": "Touchez un repère pour afficher ses détails, ou n’importe où sur la carte pour obtenir ses coordonnées."
+  },
+  "GoogleMapDemo": {
+    "map_label": "Carte des lieux. La liste ci-dessous reprend les mêmes lieux.",
+    "show_on_map": "Voir sur la carte",
+    "website_of": "Site web de {name}",
+    "clicked_at": "Vous avez touché {lat}, {lng}.",
+    "zoom_in": "Zoom avant",
+    "zoom_out": "Zoom arrière",
+    "recenter": "Revenir à la vue de départ",
+    "attribution": "les contributeurs d’OpenStreetMap",
+    "attribution_link": "Licence des données de la carte (OpenStreetMap)"
+  }
+}

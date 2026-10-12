@@ -1,0 +1,7 @@
+{
+  "APP_ENV": "staging",
+  "BACKEND_URL": "https://api.staging.example.com",
+  "LOG_LEVEL": "INFO",
+  "SUPPORT_EMAIL": "support@example.com",
+  "MAP_TILE_URL": "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+}

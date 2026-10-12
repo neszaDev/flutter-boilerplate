@@ -1,0 +1,8 @@
+# gen-l10n reads the ARB files that `make l10n` (tool/l10n.dart) writes from l10n/<locale>/*.json.
+# Edit the JSON sources, never the ARB files.
+arb-dir: lib/l10n/arb
+template-arb-file: app_en.arb
+output-dir: lib/l10n/gen
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+nullable-getter: false

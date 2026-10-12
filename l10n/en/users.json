@@ -1,0 +1,53 @@
+{
+  "UsersPage": {
+    "title": "Users",
+    "description": "Everyone with an account.",
+    "description_count": "{count, plural, =0 {No accounts yet.} one {# account.} other {# accounts.}}",
+    "search_label": "Search by email",
+    "search_placeholder": "name@example.com",
+    "search_button": "Search",
+    "list_title": "All users",
+    "results_title": "Users matching “{query}”",
+    "column_email": "Email address",
+    "column_role": "Role",
+    "column_member_since": "Member since",
+    "empty": "No users match this search.",
+    "admin_only_title": "Only admins manage users",
+    "admin_only_text": "Ask an admin to give your account the admin role."
+  },
+  "UserPage": {
+    "title": "User",
+    "member_since": "Member since {date}",
+    "back": "Back to users",
+    "self_notice": "This is your own account. Another admin has to change or delete it, so there is always one admin left.",
+    "edit_title": "Email and role",
+    "delete_title": "Delete account",
+    "delete_text": "Removes the account with its test results and files. It can't be undone."
+  },
+  "UserForm": {
+    "email_label": "Email address",
+    "role_label": "Role",
+    "sign_out_hint": "Saving signs this user out on every device.",
+    "save_button": "Save changes",
+    "saved": "Saved",
+    "error_invalid_input": "Check the highlighted fields",
+    "error_email_taken": "This email is already registered",
+    "error_generic": "Something went wrong",
+    "delete_button": "Delete account",
+    "confirm_title": "Delete {email}?",
+    "confirm_text": "The account, its test results and its files are removed for good.",
+    "confirm_cancel": "Keep it",
+    "confirm_delete": "Delete",
+    "deleted": "Deleted {email}"
+  },
+  "AccountPage": {
+    "title": "Account",
+    "description": "The details on your card.",
+    "email_label": "Email address",
+    "role_label": "Role",
+    "member_since_label": "Member since",
+    "id_label": "Account number",
+    "role_USER": "User",
+    "role_ADMIN": "Admin"
+  }
+}

@@ -1,0 +1,160 @@
+# CI checks. Each job runs the same make target a developer runs locally (see docs/ci.md):
+#   verify   -> format, analyze, localizations, commit messages, unit + widget tests (make verify)
+#   android  -> release APK build with the staging config (R8, obfuscation, signing config)
+#   ios      -> iOS release build without signing
+#   e2e      -> backend image + Postgres, API drift check, integration tests on an Android
+#               emulator                                                    (make api-check, make e2e)
+#   gate     -> "CI Gate", the single required check: fails if any job above failed
+# Runs on every PR, and is called by cd-dev.yml / cd-main.yml before anything is built for
+# release, so pushes to dev/main are checked there.
+name: CI
+
+on:
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  changes:
+    name: Detect changes
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      app: ${{ steps.diff.outputs.app }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      # Docs-only pull requests skip the build and E2E jobs. Pushes (dev/main) run everything.
+      - id: diff
+        name: Code changed?
+        run: |
+          if [ "$EVENT" != pull_request ]; then
+            echo "app=true" >> "$GITHUB_OUTPUT"
+          elif git diff --name-only "$BASE_SHA" "$HEAD_SHA" | grep -qvE '(\.md$|^docs/)'; then
+            echo "app=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "app=false" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+
+  verify:
+    name: Lint, l10n & tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # the commit message check reads the PR's commits
+      - uses: ./.github/actions/setup-flutter
+
+      - if: github.event_name == 'pull_request'
+        name: Commit messages follow Conventional Commits
+        run: |
+          bad=$(git log --format='%s' "$BASE_SHA..$HEAD_SHA" --no-merges \
+            | grep -vE '^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([^)]+\))?!?: .+' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::Not Conventional Commits:"; echo "$bad"; exit 1
+          fi
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+
+      - name: Format, analyze, localizations
+        run: make lint
+      - name: Unit and widget tests
+        run: make coverage
+      - if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: coverage
+          path: coverage/lcov.info
+          if-no-files-found: ignore
+
+  android:
+    name: Android release build
+    needs: changes
+    if: needs.changes.outputs.app == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup-flutter
+        with:
+          java: 'true'
+      - name: Release APK (staging config, debug-signed unless key.properties exists)
+        run: make build-apk ENV=staging
+
+  ios:
+    name: iOS release build
+    needs: changes
+    if: needs.changes.outputs.app == 'true'
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup-flutter
+      - name: Release build without signing (staging config)
+        run: make build-ios ENV=staging
+
+  e2e:
+    name: API drift & integration tests
+    needs: changes
+    if: needs.changes.outputs.app == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      BACKEND_TAG: dev
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup-flutter
+        with:
+          java: 'true'
+      - name: Backend (published image) + Postgres
+        run: make backend-up
+      - name: The app's models still match the backend's API
+        run: make api-check
+      - name: Enable KVM for the Android emulator
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' \
+            | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules && sudo udevadm trigger --name-match=kvm
+      - name: Integration tests on an emulator (the backend is the host's 10.0.2.2:8080)
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          target: google_apis
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
+          script: flutter test integration_test --dart-define-from-file=env/dev.json
+      - if: failure()
+        name: Backend logs
+        run: docker compose -f docker/compose.yml logs --tail=200 backend
+
+  gate:
+    name: CI Gate
+    # The one required status check: add, split or skip jobs without touching branch protection.
+    needs: [changes, verify, android, ios, e2e]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Every job passed (or was skipped for a docs-only change)
+        run: |
+          echo "$RESULTS"
+          if echo "$RESULTS" | grep -qE '"result": "(failure|cancelled)"'; then
+            echo "::error::A required CI job failed or was cancelled."
+            exit 1
+          fi
+        env:
+          RESULTS: ${{ toJSON(needs) }}

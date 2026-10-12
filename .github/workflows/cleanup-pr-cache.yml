@@ -1,0 +1,23 @@
+# Deletes a closed pull request's Actions caches, so they don't push out dev/main's caches.
+name: Clean up PR caches
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  actions: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Delete this PR's caches
+        run: |
+          gh cache list --repo "$REPO" --ref "$REF" --limit 100 --json id --jq '.[].id' \
+            | xargs -r -n1 gh cache delete --repo "$REPO"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          REF: refs/pull/${{ github.event.pull_request.number }}/merge

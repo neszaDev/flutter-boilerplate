@@ -1,0 +1,38 @@
+{
+  "IconGallery": {
+    "search_label": "Rechercher des icônes",
+    "search_placeholder": "Flèche, calendrier, utilisateur…",
+    "clear": "Effacer la recherche",
+    "count": "{total, plural, one {# icône} other {# icônes}}",
+    "matches": "{total, plural, =0 {Aucune icône ne correspond à « {query} »} one {# icône correspond à « {query} »} other {# icônes correspondent à « {query} »}}",
+    "empty": "Rien ne correspond à « {query} ». Essayez un mot plus court ou différent.",
+    "copy_name": "Copier le nom {name}",
+    "copied": "Copié",
+    "copy_failed": "Échec de la copie"
+  },
+  "CoreuiIconsPage": {
+    "title": "Bibliothèque d’icônes",
+    "description": "Les jeux d’icônes inclus dans l’application : Lucide, celui de l’application web (lucide_icons_flutter), et les Material Icons.",
+    "gallery_title": "Icônes Lucide",
+    "gallery_description": "Touchez une icône pour copier le nom à utiliser depuis LucideIcons.",
+    "website": "Site de Lucide",
+    "material_title": "Icônes Material",
+    "material_description": "Touchez une icône pour copier le nom à utiliser depuis Icons.",
+    "material_website": "Site des icônes Material",
+    "set_label": "Jeu d’icônes",
+    "set_lucide": "Lucide",
+    "set_material": "Material"
+  },
+  "BrandsPage": {
+    "title": "Icônes de marques",
+    "description": "Le jeu de marques Font Awesome (font_awesome_flutter), pour les boutons de connexion et les liens vers d’autres services.",
+    "gallery_title": "Icônes de marques",
+    "gallery_description": "Touchez une icône pour copier le nom à utiliser depuis FontAwesomeIcons."
+  },
+  "FlagsPage": {
+    "title": "Drapeaux",
+    "description": "Des drapeaux emoji, formés des deux lettres du code pays ISO 3166-1 : rien à embarquer.",
+    "gallery_title": "Drapeaux",
+    "gallery_description": "Touchez un drapeau pour copier son code pays."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "ChartsPage": {
+    "title": "Charts",
+    "description": "Line, bar, doughnut, radar, pie and polar area charts, plus the small charts used inside widgets.",
+    "line_title": "Line chart",
+    "line_description": "Two series over seven months, filled under the line.",
+    "bar_title": "Bar chart",
+    "bar_description": "Commits per month over a year.",
+    "doughnut_title": "Doughnut chart",
+    "doughnut_description": "Share per framework, with the centre cut out.",
+    "radar_title": "Radar chart",
+    "radar_description": "Hours per activity, one shape per year.",
+    "pie_title": "Pie chart",
+    "pie_description": "The same framework shares as a full pie.",
+    "polar_title": "Polar area chart",
+    "polar_description": "Equal slices per activity; the radius shows the hours.",
+    "simple_line_title": "Simple line chart",
+    "simple_line_description": "A line without axes, for tight spaces.",
+    "simple_pointed_title": "Simple pointed chart",
+    "simple_pointed_description": "The same line with a dot on every value.",
+    "simple_bar_title": "Simple bar chart",
+    "simple_bar_description": "Bars without axes, for tight spaces.",
+    "sales": "Sales"
+  },
+  "ChartExamples": {
+    "data_one": "Data one",
+    "data_two": "Data two",
+    "commits": "Commits",
+    "eating": "Eating",
+    "drinking": "Drinking",
+    "sleeping": "Sleeping",
+    "designing": "Designing",
+    "coding": "Coding",
+    "cycling": "Cycling",
+    "running": "Running",
+    "polar_tooltip": "{year}: {hours} h",
+    "value_label": "{name}: {value}",
+    "touch_hint": "Touch the chart for values."
+  }
+}

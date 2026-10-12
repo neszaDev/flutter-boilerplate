@@ -1,0 +1,50 @@
+{
+  "Totals": {
+    "label": "Totaux par marque",
+    "total": "Total"
+  },
+  "ResultsTable": {
+    "column_name": "Test",
+    "column_status": "Statut",
+    "column_score": "Score",
+    "column_tested_at": "Testé le",
+    "column_actions": "Actions"
+  },
+  "TestResultsPage": {
+    "title": "Résultats de tests",
+    "description": "Chaque test enregistré, le plus récent en premier.",
+    "create_title": "Ajouter un résultat de test",
+    "list_title": "Vos résultats de tests",
+    "empty": "Aucun résultat de test pour l'instant",
+    "empty_text": "Remplissez le formulaire et la première ligne s'inscrit sur le bulletin.",
+    "delete_button": "Supprimer",
+    "delete_label": "Supprimer {name}",
+    "confirm_title": "Supprimer « {name} » ?",
+    "confirm_text": "Le résultat sera retiré de votre bulletin. Cette action est définitive.",
+    "confirm_cancel": "Le garder",
+    "confirm_delete": "Supprimer",
+    "pagination_label": "Pages",
+    "previous_page": "Précédente",
+    "next_page": "Suivante",
+    "page_of": "Page {page} sur {total}",
+    "edit_title": "Modifier le résultat",
+    "deleted": "« {name} » supprimé"
+  },
+  "TestResultForm": {
+    "test_name_label": "Nom du test",
+    "status_label": "Statut",
+    "score_label": "Score",
+    "score_hint": "De 0 à 100",
+    "tested_at_label": "Testé le",
+    "notes_label": "Notes",
+    "notes_hint": "Facultatif",
+    "create_button": "Ajouter",
+    "created": "Ajouté à votre bulletin.",
+    "status_PENDING": "En attente",
+    "status_PASSED": "Réussi",
+    "status_FAILED": "Échoué",
+    "error_invalid_input": "Vérifiez les champs signalés",
+    "error_generic": "Une erreur est survenue",
+    "saved": "Enregistré."
+  }
+}

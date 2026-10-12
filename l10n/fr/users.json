@@ -1,0 +1,53 @@
+{
+  "UsersPage": {
+    "title": "Utilisateurs",
+    "description": "Toutes les personnes qui ont un compte.",
+    "description_count": "{count, plural, =0 {Aucun compte pour l’instant.} one {# compte.} other {# comptes.}}",
+    "search_label": "Rechercher par e-mail",
+    "search_placeholder": "nom@exemple.com",
+    "search_button": "Rechercher",
+    "list_title": "Tous les utilisateurs",
+    "results_title": "Utilisateurs correspondant à « {query} »",
+    "column_email": "Adresse e-mail",
+    "column_role": "Rôle",
+    "column_member_since": "Membre depuis",
+    "empty": "Aucun utilisateur ne correspond à cette recherche.",
+    "admin_only_title": "Seuls les administrateurs gèrent les utilisateurs",
+    "admin_only_text": "Demandez à un administrateur de vous donner le rôle administrateur."
+  },
+  "UserPage": {
+    "title": "Utilisateur",
+    "member_since": "Membre depuis le {date}",
+    "back": "Retour aux utilisateurs",
+    "self_notice": "C’est votre propre compte. Un autre administrateur doit le modifier ou le supprimer, pour qu’il reste toujours un administrateur.",
+    "edit_title": "E-mail et rôle",
+    "delete_title": "Supprimer le compte",
+    "delete_text": "Supprime le compte avec ses résultats de tests et ses fichiers. Action irréversible."
+  },
+  "UserForm": {
+    "email_label": "Adresse e-mail",
+    "role_label": "Rôle",
+    "sign_out_hint": "L’enregistrement déconnecte cet utilisateur sur tous ses appareils.",
+    "save_button": "Enregistrer",
+    "saved": "Enregistré",
+    "error_invalid_input": "Vérifiez les champs signalés",
+    "error_email_taken": "Cet e-mail est déjà enregistré",
+    "error_generic": "Une erreur s’est produite",
+    "delete_button": "Supprimer le compte",
+    "confirm_title": "Supprimer {email} ?",
+    "confirm_text": "Le compte, ses résultats de tests et ses fichiers sont supprimés définitivement.",
+    "confirm_cancel": "Le garder",
+    "confirm_delete": "Supprimer",
+    "deleted": "{email} supprimé"
+  },
+  "AccountPage": {
+    "title": "Compte",
+    "description": "Les informations de votre bulletin.",
+    "email_label": "Adresse e-mail",
+    "role_label": "Rôle",
+    "member_since_label": "Membre depuis",
+    "id_label": "Numéro de compte",
+    "role_USER": "Utilisateur",
+    "role_ADMIN": "Administrateur"
+  }
+}

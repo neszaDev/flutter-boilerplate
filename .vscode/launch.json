@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "dev",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define-from-file=env/dev.json"]
+    },
+    {
+      "name": "dev (local overrides)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define-from-file=env/dev.local.json"]
+    },
+    {
+      "name": "staging (profile)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "program": "lib/main.dart",
+      "args": ["--dart-define-from-file=env/staging.json"]
+    },
+    {
+      "name": "integration tests",
+      "request": "launch",
+      "type": "dart",
+      "program": "integration_test/app_flow_test.dart",
+      "args": ["--dart-define-from-file=env/dev.json"]
+    }
+  ]
+}

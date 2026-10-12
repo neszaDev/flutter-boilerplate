@@ -1,0 +1,7 @@
+{
+  "APP_ENV": "dev",
+  "BACKEND_URL": "",
+  "LOG_LEVEL": "FINE",
+  "SUPPORT_EMAIL": "",
+  "MAP_TILE_URL": "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+}

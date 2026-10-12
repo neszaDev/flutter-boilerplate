@@ -1,0 +1,29 @@
+{
+  "Brand": {
+    "home_label": "Accueil Marksheet",
+    "sample_note": "Marksheet est un produit d'exemple pour le Flutter + Spring Boilerplate. Remplacez ces textes par les vôtres."
+  },
+  "LocaleSwitcher": {
+    "change_language": "Changer de langue"
+  },
+  "Loading": {
+    "label": "Chargement"
+  },
+  "NotFound": {
+    "mark": "Absent",
+    "title": "Cette page est absente.",
+    "text": "Le lien est peut-être ancien ou mal saisi. Rien n'a été perdu.",
+    "home": "Retour à l'accueil"
+  },
+  "ErrorPage": {
+    "title": "Une erreur est survenue",
+    "text": "Cette page ne s'est pas chargée. Réessayez ; si cela continue, revenez un peu plus tard.",
+    "retry": "Réessayer",
+    "home": "Retour à l'accueil"
+  },
+  "GlobalError": {
+    "title": "Une erreur est survenue",
+    "text": "L'application a rencontré une erreur dont elle n'a pas pu se remettre.",
+    "retry": "Réessayer"
+  }
+}

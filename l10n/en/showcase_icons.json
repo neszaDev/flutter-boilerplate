@@ -1,0 +1,38 @@
+{
+  "IconGallery": {
+    "search_label": "Search icons",
+    "search_placeholder": "Arrow, calendar, user…",
+    "clear": "Clear the search",
+    "count": "{total, plural, one {# icon} other {# icons}}",
+    "matches": "{total, plural, =0 {No icons match “{query}”} one {# icon matches “{query}”} other {# icons match “{query}”}}",
+    "empty": "Nothing matches “{query}”. Try a shorter or different word.",
+    "copy_name": "Copy the name {name}",
+    "copied": "Copied",
+    "copy_failed": "Copy failed"
+  },
+  "CoreuiIconsPage": {
+    "title": "Icon library",
+    "description": "The icon sets the app bundles: Lucide, the web app's set (lucide_icons_flutter), and Material Icons.",
+    "gallery_title": "Lucide icons",
+    "gallery_description": "Tap an icon to copy the name you use from LucideIcons.",
+    "website": "Lucide website",
+    "material_title": "Material icons",
+    "material_description": "Tap an icon to copy the name you use from Icons.",
+    "material_website": "Material icons website",
+    "set_label": "Icon set",
+    "set_lucide": "Lucide",
+    "set_material": "Material"
+  },
+  "BrandsPage": {
+    "title": "Brand icons",
+    "description": "The Font Awesome brand set (font_awesome_flutter), for sign-in buttons and links to other services.",
+    "gallery_title": "Brand icons",
+    "gallery_description": "Tap an icon to copy the name you use from FontAwesomeIcons."
+  },
+  "FlagsPage": {
+    "title": "Flags",
+    "description": "Emoji flags, built from the two letters of the ISO 3166-1 country code: nothing to bundle.",
+    "gallery_title": "Flags",
+    "gallery_description": "Tap a flag to copy its country code."
+  }
+}

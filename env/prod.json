@@ -1,0 +1,7 @@
+{
+  "APP_ENV": "prod",
+  "BACKEND_URL": "https://api.example.com",
+  "LOG_LEVEL": "WARNING",
+  "SUPPORT_EMAIL": "support@example.com",
+  "MAP_TILE_URL": "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+}

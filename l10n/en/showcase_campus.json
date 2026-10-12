@@ -1,0 +1,167 @@
+{
+  "CampusPage": {
+    "title": "Campus home",
+    "description": "Your campus apps, your profile, and the dialogs used when signing in.",
+    "launcher_title": "Apps",
+    "dialogs_title": "Sign-in dialogs",
+    "dialogs_description": "Help for signing in, the two-factor code step, an error message and the loading overlay.",
+    "account_title": "Account menu",
+    "account_description": "Tap your photo to see who is signed in or to sign out."
+  },
+  "CampusLauncher": {
+    "category_events": "Events",
+    "category_services": "Services",
+    "category_application": "Application",
+    "category_business_intelligence": "Business intelligence",
+    "app_application": "Application",
+    "app_count": "{count, plural, one {# app} other {# apps}}",
+    "notifications": "{count, plural, one {# new notification} other {# new notifications}}"
+  },
+  "CampusProfile": {
+    "title": "Profile",
+    "photo_alt": "Photo of {name}",
+    "change_photo": "Choose a new photo",
+    "photo_preview": "Previewing {file}. The photo is not uploaded.",
+    "agency": "Agency",
+    "branch": "Branch",
+    "position": "Position",
+    "mobile": "Mobile",
+    "email": "Email",
+    "gender": "Gender",
+    "birthDate": "Date of birth",
+    "address": "Address",
+    "social_title": "Linked accounts",
+    "social_linked": "{network}: linked",
+    "social_missing": "{network}: not linked",
+    "network_facebook": "Facebook",
+    "network_instagram": "Instagram",
+    "network_google": "Google"
+  },
+  "CampusMessageDialog": {
+    "reference": "Reference"
+  },
+  "CampusLoading": {
+    "label": "Loading"
+  },
+  "CampusSignInHelp": {
+    "opens_externally": "Opens in your browser",
+    "title": "Help with signing in",
+    "description": "Who to contact and where to find the guides.",
+    "contact_title": "Contact",
+    "contact_text": "Personnel division, phone {phone}",
+    "call": "Call",
+    "competency_title": "Competency dictionary",
+    "thai_version": "Thai version",
+    "english_version": "English version",
+    "manual_title": "User manual",
+    "issue_title": "Report a sign-in problem",
+    "issue_link": "Open the reporting form",
+    "close": "Close"
+  },
+  "CampusTwoFactor": {
+    "title": "Confirm it is you",
+    "priority": "Keeping your account safe comes first.",
+    "instructions": "Enter the code we sent to:",
+    "sent_to": "Email: {email}",
+    "code_label": "Two-factor code",
+    "incomplete": "Enter all {count} characters.",
+    "delay": "The code can take a minute to arrive.",
+    "not_received": "No code yet?",
+    "resend": "Send a new code",
+    "close": "Close"
+  },
+  "CampusDialogs": {
+    "open_help": "Sign-in help",
+    "open_two_factor": "Two-factor code",
+    "open_error": "Error message",
+    "open_loading": "Loading overlay",
+    "last_action": "Last button pressed: {code}",
+    "error_title": "Error",
+    "sample_error": "The email or password is incorrect.",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "retry": "Try again"
+  },
+  "CampusAccountMenu": {
+    "open": "Account menu for {name}",
+    "sign_out": "Sign out"
+  },
+  "CampusFiltersPage": {
+    "title": "Campus filters",
+    "description": "Narrow lists by organisation, dates, university, academic year and semester.",
+    "organization_title": "Organisation filter",
+    "organization_description": "Search each list. Labels follow the app language, with English as a fallback.",
+    "option_title": "Course options",
+    "option_description": "The academic year is in the Buddhist Era (the year + 543)."
+  },
+  "CampusFilters": {
+    "organization": "Organisation",
+    "agency": "Agency",
+    "department": "Department",
+    "choose": "Choose…",
+    "search": "Search",
+    "no_match": "Nothing matches.",
+    "clear": "Clear",
+    "dates": "Dates",
+    "quick_ranges": "Quick ranges",
+    "range_today": "Today",
+    "range_yesterday": "Yesterday",
+    "range_this_week": "This week",
+    "range_last_week": "Last week",
+    "start_date": "Start date",
+    "end_date": "End date",
+    "university": "University",
+    "academic_year": "Academic year",
+    "semester": "Semester",
+    "semester_option": "Semester {semester}",
+    "summary_title": "Current selection",
+    "none": "None",
+    "date_range": "{start} to {end}",
+    "lock": "Lock the fields"
+  },
+  "CampusContentPage": {
+    "title": "Campus content",
+    "description": "Write one text in several languages, as plain fields or rich text."
+  },
+  "CampusContent": {
+    "key": "Key",
+    "value": "Value",
+    "key_label": "Language key, row {row}",
+    "value_label": "Text, row {row}",
+    "text_label": "Rich text, row {row}",
+    "add": "Add a language",
+    "remove": "Remove row {row}",
+    "data_title": "Saved data",
+    "editable": "Add and remove",
+    "fields_title": "Multi-language fields",
+    "fields_description": "A language key and its text on each row.",
+    "fields_caption": "Title",
+    "editor_title": "Multi-language rich text",
+    "editor_description": "A language key and formatted text on each row. Removing the last row brings back an empty Thai row.",
+    "editor_caption": "Description",
+    "toolbar_label": "Formatting",
+    "bold": "Bold",
+    "italic": "Italic",
+    "underline": "Underline",
+    "strike": "Strikethrough",
+    "bullet_list": "Bulleted list",
+    "ordered_list": "Numbered list"
+  },
+  "CampusQrCodePage": {
+    "title": "Campus QR code",
+    "description": "Make a QR code with a campus badge in its centre, then share it as a PNG or share its content."
+  },
+  "CampusQrCode": {
+    "title": "QR code",
+    "share_image": "Share as PNG",
+    "share_text": "Share the content",
+    "scan": "Scan a code",
+    "too_long": "This content is too long for a QR code.",
+    "code_alt": "QR code for {text}",
+    "text_label": "Content of the code",
+    "label_label": "Label"
+  },
+  "TwoFactorActions": {
+    "error_unavailable": "Two-factor sign-in is not available yet. The server cannot send or check codes for now."
+  }
+}

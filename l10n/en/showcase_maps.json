@@ -1,0 +1,19 @@
+{
+  "GoogleMapsPage": {
+    "title": "Maps",
+    "description": "Places pinned on an OpenStreetMap map drawn with flutter_map: no API key needed.",
+    "card_title": "Places",
+    "card_description": "Tap a marker for its details, or anywhere on the map for its coordinates."
+  },
+  "GoogleMapDemo": {
+    "map_label": "Map of the places. The list below has the same places.",
+    "show_on_map": "Show on map",
+    "website_of": "Website of {name}",
+    "clicked_at": "You tapped {lat}, {lng}.",
+    "zoom_in": "Zoom in",
+    "zoom_out": "Zoom out",
+    "recenter": "Back to the starting view",
+    "attribution": "OpenStreetMap contributors",
+    "attribution_link": "Map data licence (OpenStreetMap)"
+  }
+}

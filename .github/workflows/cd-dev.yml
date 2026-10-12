@@ -1,0 +1,21 @@
+# Every push to dev: run CI, then build staging releases for testers.
+name: CI/CD - dev
+
+on:
+  push:
+    branches: [dev]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+
+  release:
+    needs: ci
+    uses: ./.github/workflows/build-release.yml
+    with:
+      environment: dev
+      app-env: staging
+    secrets: inherit

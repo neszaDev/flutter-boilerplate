@@ -1,0 +1,50 @@
+{
+  "Totals": {
+    "label": "Totals by mark",
+    "total": "Total"
+  },
+  "ResultsTable": {
+    "column_name": "Test",
+    "column_status": "Status",
+    "column_score": "Score",
+    "column_tested_at": "Tested at",
+    "column_actions": "Actions"
+  },
+  "TestResultsPage": {
+    "title": "Test results",
+    "description": "Every test you have logged, most recent first.",
+    "create_title": "Add a test result",
+    "list_title": "Your test results",
+    "empty": "No test results yet",
+    "empty_text": "Fill in the form and the first row goes on the card.",
+    "delete_button": "Delete",
+    "delete_label": "Delete {name}",
+    "confirm_title": "Delete “{name}”?",
+    "confirm_text": "This takes the result off your card. It can't be undone.",
+    "confirm_cancel": "Keep it",
+    "confirm_delete": "Delete",
+    "pagination_label": "Pages",
+    "previous_page": "Previous",
+    "next_page": "Next",
+    "page_of": "Page {page} of {total}",
+    "edit_title": "Edit the test result",
+    "deleted": "Deleted “{name}”"
+  },
+  "TestResultForm": {
+    "test_name_label": "Test name",
+    "status_label": "Status",
+    "score_label": "Score",
+    "score_hint": "0 to 100",
+    "tested_at_label": "Tested at",
+    "notes_label": "Notes",
+    "notes_hint": "Optional",
+    "create_button": "Add",
+    "created": "Added to your card.",
+    "status_PENDING": "Pending",
+    "status_PASSED": "Passed",
+    "status_FAILED": "Failed",
+    "error_invalid_input": "Check the highlighted fields",
+    "error_generic": "Something went wrong",
+    "saved": "Saved."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Error404Page": {
+    "title": "Error 404",
+    "description": "A preview of the page shown when a link leads nowhere.",
+    "mark": "Absent",
+    "code": "404",
+    "card_title": "You're lost.",
+    "card_text": "The page you are looking for was not found.",
+    "home": "Back to the overview"
+  },
+  "Error500Page": {
+    "title": "Error 500",
+    "description": "A preview of the page shown when the server fails.",
+    "code": "500",
+    "card_title": "Houston, we have a problem.",
+    "card_text": "The page you are looking for is temporarily unavailable.",
+    "retry": "Try again",
+    "home": "Back to the overview",
+    "retry_result": "Tried again: this preview always fails."
+  },
+  "ErrorPreviewSearch": {
+    "label": "Search",
+    "placeholder": "What are you looking for?",
+    "submit": "Search",
+    "preview_result": "This is a preview: nothing was searched for “{query}”.",
+    "preview_empty": "Type what you are looking for first."
+  }
+}

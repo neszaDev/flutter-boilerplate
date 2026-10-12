@@ -1,0 +1,29 @@
+{
+  "Brand": {
+    "home_label": "Marksheet home",
+    "sample_note": "Marksheet is a sample product for the Flutter + Spring Boilerplate. Replace this copy with your own."
+  },
+  "LocaleSwitcher": {
+    "change_language": "Change language"
+  },
+  "Loading": {
+    "label": "Loading"
+  },
+  "NotFound": {
+    "mark": "Absent",
+    "title": "This page is absent.",
+    "text": "The link may be old or mistyped. Nothing was lost.",
+    "home": "Back to home"
+  },
+  "ErrorPage": {
+    "title": "Something went wrong",
+    "text": "This page didn't load. Try again; if it keeps happening, come back in a little while.",
+    "retry": "Try again",
+    "home": "Back to home"
+  },
+  "GlobalError": {
+    "title": "Something went wrong",
+    "text": "The app hit an error it couldn't recover from.",
+    "retry": "Try again"
+  }
+}

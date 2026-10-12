@@ -1,0 +1,167 @@
+{
+  "CampusPage": {
+    "title": "Accueil du campus",
+    "description": "Vos applications du campus, votre profil et les fenêtres utilisées à la connexion.",
+    "launcher_title": "Applications",
+    "dialogs_title": "Fenêtres de connexion",
+    "dialogs_description": "L'aide à la connexion, l'étape du code à deux facteurs, un message d'erreur et l'écran de chargement.",
+    "account_title": "Menu du compte",
+    "account_description": "Touchez votre photo pour voir qui est connecté ou vous déconnecter."
+  },
+  "CampusLauncher": {
+    "category_events": "Événements",
+    "category_services": "Services",
+    "category_application": "Application",
+    "category_business_intelligence": "Informatique décisionnelle",
+    "app_application": "Application",
+    "app_count": "{count, plural, one {# application} other {# applications}}",
+    "notifications": "{count, plural, one {# nouvelle notification} other {# nouvelles notifications}}"
+  },
+  "CampusProfile": {
+    "title": "Profil",
+    "photo_alt": "Photo de {name}",
+    "change_photo": "Choisir une nouvelle photo",
+    "photo_preview": "Aperçu de {file}. La photo n'est pas envoyée.",
+    "agency": "Service",
+    "branch": "Section",
+    "position": "Poste",
+    "mobile": "Portable",
+    "email": "E-mail",
+    "gender": "Genre",
+    "birthDate": "Date de naissance",
+    "address": "Adresse",
+    "social_title": "Comptes associés",
+    "social_linked": "{network} : associé",
+    "social_missing": "{network} : non associé",
+    "network_facebook": "Facebook",
+    "network_instagram": "Instagram",
+    "network_google": "Google"
+  },
+  "CampusMessageDialog": {
+    "reference": "Référence"
+  },
+  "CampusLoading": {
+    "label": "Chargement"
+  },
+  "CampusSignInHelp": {
+    "opens_externally": "S'ouvre dans votre navigateur",
+    "title": "Aide à la connexion",
+    "description": "Qui contacter et où trouver les guides.",
+    "contact_title": "Contact",
+    "contact_text": "Service du personnel, téléphone {phone}",
+    "call": "Appeler",
+    "competency_title": "Référentiel des compétences",
+    "thai_version": "Version thaïe",
+    "english_version": "Version anglaise",
+    "manual_title": "Manuel d'utilisation",
+    "issue_title": "Signaler un problème de connexion",
+    "issue_link": "Ouvrir le formulaire de signalement",
+    "close": "Fermer"
+  },
+  "CampusTwoFactor": {
+    "title": "Confirmez votre identité",
+    "priority": "La sécurité de votre compte passe en premier.",
+    "instructions": "Saisissez le code envoyé à :",
+    "sent_to": "E-mail : {email}",
+    "code_label": "Code à deux facteurs",
+    "incomplete": "Saisissez les {count} caractères.",
+    "delay": "Le code peut mettre une minute à arriver.",
+    "not_received": "Pas encore de code ?",
+    "resend": "Envoyer un nouveau code",
+    "close": "Fermer"
+  },
+  "CampusDialogs": {
+    "open_help": "Aide à la connexion",
+    "open_two_factor": "Code à deux facteurs",
+    "open_error": "Message d'erreur",
+    "open_loading": "Écran de chargement",
+    "last_action": "Dernier bouton utilisé : {code}",
+    "error_title": "Erreur",
+    "sample_error": "L'e-mail ou le mot de passe est incorrect.",
+    "cancel": "Annuler",
+    "submit": "Valider",
+    "retry": "Réessayer"
+  },
+  "CampusAccountMenu": {
+    "open": "Menu du compte de {name}",
+    "sign_out": "Se déconnecter"
+  },
+  "CampusFiltersPage": {
+    "title": "Filtres du campus",
+    "description": "Affinez les listes par organisation, dates, université, année universitaire et semestre.",
+    "organization_title": "Filtre d'organisation",
+    "organization_description": "Recherchez dans chaque liste. Les libellés suivent la langue de l'application, avec l'anglais par défaut.",
+    "option_title": "Options de cours",
+    "option_description": "L'année universitaire est en ère bouddhique (l'année + 543)."
+  },
+  "CampusFilters": {
+    "organization": "Organisation",
+    "agency": "Service",
+    "department": "Département",
+    "choose": "Choisir…",
+    "search": "Rechercher",
+    "no_match": "Aucun résultat.",
+    "clear": "Effacer",
+    "dates": "Dates",
+    "quick_ranges": "Périodes rapides",
+    "range_today": "Aujourd'hui",
+    "range_yesterday": "Hier",
+    "range_this_week": "Cette semaine",
+    "range_last_week": "La semaine dernière",
+    "start_date": "Date de début",
+    "end_date": "Date de fin",
+    "university": "Université",
+    "academic_year": "Année universitaire",
+    "semester": "Semestre",
+    "semester_option": "Semestre {semester}",
+    "summary_title": "Sélection actuelle",
+    "none": "Aucune",
+    "date_range": "Du {start} au {end}",
+    "lock": "Verrouiller les champs"
+  },
+  "CampusContentPage": {
+    "title": "Contenu du campus",
+    "description": "Rédigez un texte en plusieurs langues, en champs simples ou en texte enrichi."
+  },
+  "CampusContent": {
+    "key": "Clé",
+    "value": "Valeur",
+    "key_label": "Clé de langue, ligne {row}",
+    "value_label": "Texte, ligne {row}",
+    "text_label": "Texte enrichi, ligne {row}",
+    "add": "Ajouter une langue",
+    "remove": "Supprimer la ligne {row}",
+    "data_title": "Données enregistrées",
+    "editable": "Ajout et suppression",
+    "fields_title": "Champs multilingues",
+    "fields_description": "Une clé de langue et son texte sur chaque ligne.",
+    "fields_caption": "Titre",
+    "editor_title": "Texte enrichi multilingue",
+    "editor_description": "Une clé de langue et un texte mis en forme sur chaque ligne. Supprimer la dernière ligne rétablit une ligne thaïe vide.",
+    "editor_caption": "Description",
+    "toolbar_label": "Mise en forme",
+    "bold": "Gras",
+    "italic": "Italique",
+    "underline": "Souligné",
+    "strike": "Barré",
+    "bullet_list": "Liste à puces",
+    "ordered_list": "Liste numérotée"
+  },
+  "CampusQrCodePage": {
+    "title": "QR code du campus",
+    "description": "Créez un QR code avec un badge du campus au centre, puis partagez-le en PNG ou partagez son contenu."
+  },
+  "CampusQrCode": {
+    "title": "QR code",
+    "share_image": "Partager en PNG",
+    "share_text": "Partager le contenu",
+    "scan": "Scanner un code",
+    "too_long": "Ce contenu est trop long pour un QR code.",
+    "code_alt": "QR code pour {text}",
+    "text_label": "Contenu du code",
+    "label_label": "Libellé"
+  },
+  "TwoFactorActions": {
+    "error_unavailable": "La connexion à deux facteurs n'est pas encore disponible. Le serveur ne peut pas encore envoyer ni vérifier de codes."
+  }
+}

@@ -1,0 +1,24 @@
+name: Set up Flutter
+description: Flutter SDK (version pinned here), pub cache, dependencies and generated localizations.
+inputs:
+  java:
+    description: Also set up Java 17 for Gradle (Android builds).
+    default: 'false'
+runs:
+  using: composite
+  steps:
+    - if: inputs.java == 'true'
+      uses: actions/setup-java@v6
+      with:
+        distribution: temurin
+        java-version: '17'
+        cache: gradle
+    - uses: subosito/flutter-action@v2
+      with:
+        # Keep in step with the version the team uses (`flutter --version`) and pubspec.yaml.
+        flutter-version: 3.47.6
+        channel: stable
+        cache: true
+    - name: Dependencies
+      shell: bash
+      run: flutter pub get

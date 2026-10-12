@@ -1,0 +1,28 @@
+{
+  "Error404Page": {
+    "title": "Erreur 404",
+    "description": "Un aperçu de la page affichée quand un lien ne mène nulle part.",
+    "mark": "Absent",
+    "code": "404",
+    "card_title": "Vous êtes perdu.",
+    "card_text": "La page que vous cherchez est introuvable.",
+    "home": "Retour à la vue d’ensemble"
+  },
+  "Error500Page": {
+    "title": "Erreur 500",
+    "description": "Un aperçu de la page affichée quand le serveur est en échec.",
+    "code": "500",
+    "card_title": "Houston, nous avons un problème.",
+    "card_text": "La page que vous cherchez est temporairement indisponible.",
+    "retry": "Réessayer",
+    "home": "Retour à la vue d’ensemble",
+    "retry_result": "Nouvel essai : cet aperçu échoue toujours."
+  },
+  "ErrorPreviewSearch": {
+    "label": "Rechercher",
+    "placeholder": "Que cherchez-vous ?",
+    "submit": "Rechercher",
+    "preview_result": "Ceci est un aperçu : aucune recherche n'a été lancée pour « {query} ».",
+    "preview_empty": "Saisissez d'abord ce que vous cherchez."
+  }
+}
